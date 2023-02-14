@@ -25,9 +25,59 @@ a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 16px;
   background-color: var(--clr-bg);
   height: 100vh;
   color: var(--clr-white);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.main {
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.main__logo {
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.main__logo img {
+  width: 50px;
+}
+.main__logo img:hover {
+  animation: logo-animation 0.5s ease-in-out alternate infinite;
+}
+.main__player {
+  position: relative;
+  height: 100%;
+}
+.main__player img {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+}
+.main__title {
+  transform: rotate(180deg);
+  font-weight: 500;
+  font-size: 130px;
+  position: absolute;
+  bottom: 7rem;
+  left: -3rem;
+  line-height: 0.8;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--clr-black);
+}
+
+@keyframes logo-animation {
+  to {
+    transform: scale(1.1);
+  }
 }/*# sourceMappingURL=app.css.map */
