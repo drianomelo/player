@@ -1,7 +1,15 @@
 :root {
-  --main-cinza: #cccccc;
-  --main-branco: #ffffff;
-  --main-preto: #000000;
+  --clr-bg: #ffefcc;
+  --clr-white: #fff;
+  --clr-blue: #3cc2ef;
+  --clr-blue-dark: #0074be;
+  --clr-black: #402f44;
+  --clr-black-dark: #2c222e;
+  --clr-black-opacity: #402f443f;
+  --clr-black-light: #656982;
+  --clr-gray: #6c6c6c;
+  --clr-red: #ed6077;
+  --clr-green: #60ed77;
 }
 
 *,
@@ -19,23 +27,23 @@ a {
 body {
   font-family: "Teko", sans-serif;
   font-size: 16px;
-  background: url(../../../assets/images/back.png);
-  background-position: center center;
-  background-size: cover cover;
+  background-color: var(--clr-bg);
+  color: var(--clr-white);
 }
 
 .main {
-  width: 80vw;
-  height: 80vh;
-  margin: 10vh 8vw 10vh 12vw;
+  height: 100vh;
   display: flex;
-  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
 }
 .main__logo {
   cursor: pointer;
   position: absolute;
   top: 2%;
   left: 2%;
+  z-index: 10;
 }
 .main__logo img {
   width: 50px;
@@ -44,30 +52,36 @@ body {
   animation: logo-animation 0.5s ease-in-out alternate infinite;
 }
 .main__player {
-  background: url(../../../assets/images/estrutura.png) no-repeat;
-  background-position: top;
-  margin: 0;
-  flex-basis: 40%;
   position: relative;
+  width: 400px;
 }
 .main__player img {
-  height: 100%;
-  z-index: 1;
+  width: 300px;
+}
+.main__player::after {
+  content: "";
+  display: block;
   position: absolute;
-  left: 10%;
-  top: -2%;
+  left: 7%;
+  bottom: 1%;
+  width: 60%;
+  z-index: -10;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--clr-black-opacity);
 }
 .main__title {
   transform: rotate(180deg);
   font-weight: 500;
   font-size: 130px;
   position: absolute;
+  z-index: -10;
   bottom: 7rem;
-  left: -3rem;
+  left: -2.5rem;
   line-height: 0.8;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--clr-black-opacity);
 }
 
 @keyframes logo-animation {
