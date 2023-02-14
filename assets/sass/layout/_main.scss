@@ -1,9 +1,10 @@
 .main {
-  width: 100vw;
+  width: 80vw;
   height: 80vh;
-  justify-content: center;
-  align-items: center;
+  margin: 10vh 8vw 10vh 12vw;
   display: flex;
+  gap: 1vw;
+
   &__logo {
     cursor: pointer;
     position: absolute;
@@ -19,12 +20,18 @@
   }
 
   &__player {
+    background: url(../../../assets/images/estrutura.png) no-repeat;
+    background-position: top;
+    margin: 0;
+    flex-basis: 40%;
     position: relative;
-    height: 100%;
+
     & img {
-      position: absolute;
-      z-index: 1;
       height: 100%;
+      z-index: 1;
+      position: absolute;
+      left: 10%;
+      top: -2%;
     }
   }
 
@@ -38,7 +45,7 @@
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: var(--clr-black);
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 

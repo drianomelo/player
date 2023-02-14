@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/logo.svg" />
     <title>Driano.css | Player NBA</title>
 
     <link rel="stylesheet" href="dist/app.css" />
@@ -18,37 +18,97 @@
   <body>
     <main class="main">
       <div class="main__logo">
-        <img src="assets/images/logo.svg" alt="" />
+        <img src="assets/images/logo.svg" alt="logo driano.css" />
       </div>
 
-      <div class="main__player">
+      <section class="main__player">
         <img src="assets/images/george.png" alt="Player" />
-        <figcaption class="main__title">PLAYER <br />NBA</figcaption>
-      </div>
+        <figcaption class="main__title">PLAYER<br />NBA</figcaption>
+      </section>
 
-      <div class="attributes">
-        <div class="attributes__finishing">
-          <p>Finalização</p>
+      <section class="attributes">
+        <div class="estatistica">
+          <p class="estatistica-titulo">Força</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero">768</p>
+          </div>
         </div>
-        <div class="attributes__shooting">
-          <p>Arremesso</p>
+        <div class="estatistica">
+          <p class="estatistica-titulo">Poder</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero">630</p>
+          </div>
         </div>
-        <div class="attributes__playmaking">
-          <p>Criação de jogadas</p>
+        <div class="estatistica">
+          <p class="estatistica-titulo">Energia</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero">289</p>
+          </div>
         </div>
-        <div class="attributes__defense">
-          <p>Defesa</p>
+        <div class="estatistica">
+          <p class="estatistica-titulo">Velocidade</p>
+          <div class="estatistica-valor">
+            <p class="estatistica-numero">597</p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="physicals">
-        <div class="physicals__speed"></div>
-        <div class="physicals__strength"></div>
-        <div class="physicals__acceleration"></div>
-        <div class="physicals__vertical"></div>
-        <div class="physicals__weight"></div>
-        <div class="physicals__height"></div>
-      </div>
+      <section class="physicals">
+        <form action="" class="montador">
+          <div class="box montador-conteudo">
+            <div class="peca">
+              <label for="" class="peca-titulo">Braços</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Blindagem</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Núcleos</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Pernas</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Foguetes</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="Iniciar produção"
+            class="producao"
+            id="producao"
+          />
+        </form>
+      </section>
     </main>
   </body>
 </html>

@@ -13,10 +13,7 @@ a {
 body {
   font-family: "Teko", sans-serif;
   font-size: 16px;
-  background-color: var(--clr-bg);
-  height: 100vh;
-  color: var(--clr-white);
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  background: url(../../../assets/images/back.png);
+  background-position: center center;
+  background-size: cover cover;
 }
