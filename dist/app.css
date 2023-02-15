@@ -27,7 +27,10 @@ a {
 body {
   font-family: "Teko", sans-serif;
   font-size: 16px;
-  background-color: var(--clr-bg);
+  background-image: url(../../../assets/images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   color: var(--clr-white);
 }
 
@@ -54,21 +57,10 @@ body {
 .main__player {
   position: relative;
   width: 400px;
+  margin-right: 3rem;
 }
 .main__player img {
   width: 300px;
-}
-.main__player::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 7%;
-  bottom: 1%;
-  width: 60%;
-  z-index: -10;
-  height: 15px;
-  border-radius: 50%;
-  background-color: var(--clr-black-opacity);
 }
 .main__title {
   transform: rotate(180deg);
@@ -81,7 +73,7 @@ body {
   line-height: 0.8;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  color: var(--clr-black-opacity);
+  color: var(--clr-white);
 }
 
 @keyframes logo-animation {
@@ -90,20 +82,20 @@ body {
   }
 }
 .attributes {
-  flex-basis: 23%;
+  width: 300px;
   padding: 2em 2em 0;
   background: rgba(0, 0, 0, 0.6);
   -webkit-clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
           clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-  border-left: 5px solid var(--main-cinza);
-  height: 80%;
+  height: 70%;
+  margin-right: 2rem;
 }
 
 .physicals {
-  flex-basis: 32%;
+  width: 400px;
+  padding: 2em 2em 0;
   background: rgba(0, 0, 0, 0.6);
   -webkit-clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
           clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-  border-left: 5px solid var(--main-cinza);
-  height: 80%;
+  height: 70%;
 }/*# sourceMappingURL=app.css.map */

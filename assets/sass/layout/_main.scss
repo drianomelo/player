@@ -23,23 +23,24 @@
   &__player {
     position: relative;
     width: 400px;
+    margin-right: 3rem;
 
     & img {
       width: 300px;
     }
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 7%;
-      bottom: 1%;
-      width: 60%;
-      z-index: -10;
-      height: 15px;
-      border-radius: 50%;
-      background-color: var(--clr-black-opacity);
-    }
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   left: 7%;
+    //   bottom: 1%;
+    //   width: 60%;
+    //   z-index: -10;
+    //   height: 15px;
+    //   border-radius: 50%;
+    //   background-color: var(--clr-white);
+    // }
   }
 
   &__title {
@@ -53,7 +54,7 @@
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: var(--clr-black-opacity);
+    color: var(--clr-white);
   }
 }
 
