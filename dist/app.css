@@ -1,15 +1,7 @@
 :root {
-  --clr-bg: #ffefcc;
-  --clr-white: #fff;
-  --clr-blue: #3cc2ef;
-  --clr-blue-dark: #0074be;
-  --clr-black: #402f44;
-  --clr-black-dark: #2c222e;
-  --clr-black-opacity: #402f443f;
-  --clr-black-light: #656982;
-  --clr-gray: #6c6c6c;
-  --clr-red: #ed6077;
-  --clr-green: #60ed77;
+  --main-cinza: #cccccc;
+  --main-branco: #ffffff;
+  --main-preto: #000000;
 }
 
 *,
@@ -25,55 +17,51 @@ a {
 }
 
 body {
+  background: url(../../../assets/images/back.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover cover;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+body,
+input {
   font-family: "Teko", sans-serif;
-  font-size: 16px;
-  background-image: url(../../../assets/images/back.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  color: var(--clr-white);
 }
 
 .main {
-  height: 100vh;
+  width: 80vw;
+  height: 80vh;
+  margin: 10vh 8vw 10vh 12vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem;
-}
-.main__logo {
-  cursor: pointer;
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  z-index: 10;
-}
-.main__logo img {
-  width: 50px;
-}
-.main__logo img:hover {
-  animation: logo-animation 0.5s ease-in-out alternate infinite;
+  gap: 1vw;
 }
 .main__player {
+  background: url(../../../assets/images/estrutura.png) no-repeat;
+  background-position: center center;
+  margin: 0;
+  flex-basis: 40%;
   position: relative;
-  width: 400px;
-  margin-right: 3rem;
 }
 .main__player img {
-  width: 300px;
+  height: 110%;
+  z-index: 1;
+  position: absolute;
+  left: -20%;
+  top: -5%;
 }
-.main__title {
+.main__player figcaption {
   transform: rotate(180deg);
   font-weight: 500;
-  font-size: 130px;
+  font-size: 180px;
   position: absolute;
-  z-index: -10;
   bottom: 7rem;
-  left: -2.5rem;
+  left: -3rem;
   line-height: 0.8;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  color: var(--clr-white);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @keyframes logo-animation {
@@ -81,21 +69,62 @@ body {
     transform: scale(1.1);
   }
 }
-.attributes {
-  width: 300px;
-  padding: 2em 2em 0;
+.box {
   background: rgba(0, 0, 0, 0.6);
   -webkit-clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
           clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-  height: 70%;
-  margin-right: 2rem;
+  border-left: 5px solid var(--main-cinza);
+  height: 80%;
 }
 
-.physicals {
-  width: 400px;
+.attributes {
+  flex-basis: 23%;
   padding: 2em 2em 0;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-          clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-  height: 70%;
+}
+
+.attribute {
+  color: var(--main-branco);
+  display: flex;
+  align-items: flex-start;
+  height: 25%;
+}
+.attribute__title {
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--main-cinza);
+  flex-basis: 40%;
+  text-transform: uppercase;
+  order: 1;
+}
+.attribute__value {
+  flex-basis: 60%;
+  position: relative;
+  margin: 10px 0 0;
+  order: 2;
+  margin: -10px 0 0;
+}
+.attribute__value::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  border: 1px solid var(--main-cinza);
+  border-radius: 50%;
+}
+.attribute__number {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-46%);
+  width: 100%;
+  line-height: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+.attribute:nth-child(2n) .attribute__title {
+  order: 2;
+  text-align: right;
+}
+.attribute:nth-child(2n) .attribute__value {
+  order: 1;
+  flex-basis: 35%;
+  margin: 10px 0 0;
 }/*# sourceMappingURL=app.css.map */

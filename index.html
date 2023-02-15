@@ -17,27 +17,93 @@
   </head>
   <body>
     <main class="main">
-      <div class="main__logo">
-        <img src="assets/images/logo.svg" alt="logo driano.css" />
-      </div>
-
       <section class="main__player">
-        <img src="assets/images/george.png" alt="Player" />
-        <figcaption class="main__title">PLAYER<br />NBA</figcaption>
+        <img src="assets/images/lebron.png" alt="Robotron" />
+        <figcaption>PLAYER <br />NBA</figcaption>
       </section>
 
-      <section class="attributes">
-        <div class="attributes__finishing">Finalização</div>
-        <div class="attributes__shooting">Arremesso</div>
-        <div class="attributes__playmaking">Criação de Jogadas</div>
-        <div class="attributes__defense">Defesa</div>
+      <section class="box attributes">
+        <div class="attribute">
+          <p class="attribute__title">Finalização</p>
+          <div class="attribute__value">
+            <p class="attribute__number">99</p>
+          </div>
+        </div>
+        <div class="attribute">
+          <p class="attribute__title">Arremesso</p>
+          <div class="attribute__value">
+            <p class="attribute__number">99</p>
+          </div>
+        </div>
+        <div class="attribute">
+          <p class="attribute__title">Jogada</p>
+          <div class="attribute__value">
+            <p class="attribute__number">80</p>
+          </div>
+        </div>
+        <div class="attribute">
+          <p class="attribute__title">Defesa</p>
+          <div class="attribute__value">
+            <p class="attribute__number">99</p>
+          </div>
+        </div>
       </section>
 
-      <section class="physicals">
-        <div class="attributes__finishing">Finalização</div>
-        <div class="attributes__shooting">Arremesso</div>
-        <div class="attributes__playmaking">Criação de Jogadas</div>
-        <div class="attributes__defense">Defesa</div>
+      <section class="equipamentos">
+        <form action="" class="montador">
+          <div class="box montador-conteudo">
+            <div class="peca">
+              <label for="" class="peca-titulo">Braços</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Blindagem</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Núcleos</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Pernas</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+            <hr class="linha" />
+            <div class="peca">
+              <label for="" class="peca-titulo">Foguetes</label>
+              <div class="controle">
+                <buttom class="controle-ajuste">-</buttom>
+                <input type="text" class="controle-contador" value="00" />
+                <buttom class="controle-ajuste">+</buttom>
+              </div>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="Iniciar produção"
+            class="producao"
+            id="producao"
+          />
+        </form>
       </section>
     </main>
   </body>
