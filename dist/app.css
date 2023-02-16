@@ -85,7 +85,7 @@ input {
 .attribute {
   color: var(--main-branco);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   height: 25%;
 }
 .attribute__title {
@@ -127,4 +127,86 @@ input {
   order: 1;
   flex-basis: 35%;
   margin: 10px 0 0;
+}
+
+.physicals {
+  flex-basis: 32%;
+}
+
+.montador {
+  height: 100%;
+}
+.montador__content {
+  padding: 2em 10%;
+}
+
+.stat {
+  padding: 1em 0;
+}
+.stat__title {
+  color: var(--main-branco);
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.controll {
+  background: var(--main-preto);
+  border-radius: 25px;
+  float: right;
+  display: inline-flex;
+  padding: 5px;
+  align-items: center;
+  align-self: flex-end;
+}
+.controll__cont {
+  width: 40px;
+  height: 35px;
+  background: none;
+  border: 0;
+  margin: 0 1rem;
+  color: var(--main-branco);
+  text-align: center;
+  font-size: 2.5em;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 8px;
+}
+.controll__ajuste {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  border-radius: 50%;
+  color: var(--main-cinza);
+  font-size: 4em;
+  background: var(--main-preto);
+  text-align: center;
+  border: 3px solid var(--main-cinza);
+  cursor: pointer;
+}
+
+.linha {
+  border-color: var(--main-cinza);
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+}
+
+.btn {
+  margin-top: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 0.2em 1em;
+  float: right;
+  border: 3px solid var(--main-branco);
+  background: var(--main-branco);
+  -webkit-clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: var(--main-preto);
+  color: var(--main-branco);
 }/*# sourceMappingURL=app.css.map */
