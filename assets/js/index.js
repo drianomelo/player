@@ -1,5 +1,19 @@
-const btn = document.querySelector(".btn");
+const controle = document.querySelectorAll("[data-controll]");
 
-btn.addEventListener("click", () => {
-  alert("Fui clicado");
+console.log(controle);
+
+controle.forEach((elemento) => {
+  elemento.addEventListener("click", (evento) => {
+    manipulaDados(evento.target.dataset.controll, evento.target.parentNode);
+  });
 });
+
+function manipulaDados(operacao, controle) {
+  const peca = controle.querySelector("[data-cont]");
+
+  if (operacao === "-") {
+    peca.value = parseInt(peca.value) - 1;
+  } else {
+    peca.value = parseInt(peca.value) + 1;
+  }
+}
